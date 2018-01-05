@@ -1,7 +1,7 @@
-@media only screen and (min-width: 768px) and (max-width: 1024px)
+@media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
   .card
-    width: calc((100vw - 165px)/2)
+    width: calc((#{$screen-width} - #{$tablet_padding})/2)
 
-@media only screen and (min-width: 329px) and (max-width: 640px)
+@media only screen and (min-width: $phone-min) and (max-width: $phone-max)
   .card
-    width: calc(100vw - 100px)
+    width: calc(#{$screen-width} - #{$phone_padding})

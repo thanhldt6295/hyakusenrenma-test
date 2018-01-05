@@ -1,5 +1,5 @@
 .body-color
-  background-color: #DBD0D0
+  background-color: $light-grey
 
 .cover
   display: flex
@@ -10,7 +10,7 @@
 .card
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
   transition: 0.3s
-  width: calc((100vw - 195px)/3)
+  width: calc((#{$screen-width} - #{$desktop_padding})/3)
   margin-right: 30px
   background-color: white
   &:hover
@@ -29,7 +29,7 @@
   //
 
 .icon-color
-  color: #A0A0A0
+  color: $grey
 
 .font-size-small
   font-size: 12px
