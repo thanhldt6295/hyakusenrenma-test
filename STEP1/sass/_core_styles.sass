@@ -8,6 +8,7 @@
   margin-right: 20px
 
 .card
+  cursor: pointer
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
   transition: 0.3s
   width: calc((#{$screen-width} - #{$desktop_padding})/3)
@@ -33,3 +34,8 @@
 
 .font-size-small
   font-size: 12px
+  
+.hover-click
+  cursor: pointer
+  &:hover
+    font-weight: 800

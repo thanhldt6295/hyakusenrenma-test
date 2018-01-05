@@ -15,6 +15,7 @@
     width: calc((100vw - 195px)/3);
 	margin-right: 30px;
 	background-color: white;
+	cursor: pointer;
 }
 
 .card:hover {
@@ -44,3 +45,11 @@
 .font-size-small {
 	font-size: 12px;
 }
+
+.hover-click {
+	cursor: pointer;
+}
+.hover-click:hover {
+	font-weight: 800;
+}
+
