@@ -11,46 +11,25 @@
 <style>
 
 </style>
-<body class="body-color">
+<body class="body-color" ng-app="templateGenerator" ng-controller="vm.JSController">
 	<h2 style="text-align: center">Listings</h2>
 	
 	<div class="cover">
-		<div class="card">
-		  <img src="../images/photo.jpeg" alt="Avatar" style="width:100%">
+		<div class="card" ng-repeat="instance in Data_News">
+		  <img src="../images/photo.jpeg" style="width:100%">
 		  <div class="container">
-			<h3><b>City Lights In New Your</b></h3>
-			<p class="sub-title">The city that never sleeps.<p>
-			<p>New York is a state in the northeastern U.S., known for New York City and towering Niagara Falls. NYC’s island of Manhattan is home to the Empire State Building, Times Square and Central Park.</p>
+			<h3><b>{{instance.title}}</b></h3>
+			<p class="sub-title">{{instance.subtitle}}<p>
+			<p>{{instance.content}}</p>
 			<p>
-				<i class="fa fa-clock-o icon-color"></i><span class="icon-color font-size-small" style="margin-right: 15px;">&nbsp;6 mins ago</span>
-				<i class="fa fa-comments-o icon-color"></i><span class="icon-color font-size-small hover-click">&nbsp;39 comments</span>
-			</p>
-		  </div>
-		</div>
-		<div class="card">
-		  <img src="../images/photo.jpeg" alt="Avatar" style="width:100%">
-		  <div class="container">
-			<h3><b>City Lights In New Your</b></h3>
-			<p class="sub-title">The city that never sleeps.<p>
-			<p>New York is a state in the northeastern U.S., known for New York City and towering Niagara Falls. NYC’s island of Manhattan is home to the Empire State Building, Times Square and Central Park.</p>
-			<p>
-				<i class="fa fa-clock-o icon-color"></i><span class="icon-color font-size-small" style="margin-right: 15px;">&nbsp;6 mins ago</span>
-				<i class="fa fa-comments-o icon-color"></i><span class="icon-color font-size-small hover-click">&nbsp;39 comments</span>
-			</p>
-		  </div>
-		</div>
-		<div class="card">
-		  <img src="../images/photo.jpeg" alt="Avatar" style="width:100%">
-		  <div class="container">
-			<h3><b>City Lights In New Your</b></h3>
-			<p class="sub-title">The city that never sleeps.<p>
-			<p>New York is a state in the northeastern U.S., known for New York City and towering Niagara Falls. NYC’s island of Manhattan is home to the Empire State Building, Times Square and Central Park.</p>
-			<p>
-				<i class="fa fa-clock-o icon-color"></i><span class="icon-color font-size-small" style="margin-right: 15px;">&nbsp;6 mins ago</span>
-				<i class="fa fa-comments-o icon-color"></i><span class="icon-color font-size-small hover-click">&nbsp;39 comments</span>
+				<i class="fa fa-clock-o icon-color"></i><span class="icon-color font-size-small" style="margin-right: 15px;">&nbsp;{{instance.time}}</span>
+				<i class="fa fa-comments-o icon-color"></i><span class="icon-color font-size-small hover-click">&nbsp;{{instance.comments}}</span>
 			</p>
 		  </div>
 		</div>
 	</div>
+
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/Controller_JS.js"></script>
 </body>
 </html>
